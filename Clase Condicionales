@@ -1,0 +1,85 @@
+Condicionales.
+1 - Simple-> Evalua una unica condicion, si y solo si, es verdadero.
+    if -> Palabra reservada. 
+    () -> Espacio para la condicion.
+    {} -> Bloque de código a ejecutar.
+El condicional <-simple-> sirve para evaluar eventos de una sola respuesta sin nececidad de devolver un <-Else->.
+
+2 - Compuesto -> Evalua dos caminos en una toma de decisiones. 
+El condicional compuesto se ejecuta solo cuando el condicional es falso (false). 
+    if(){
+
+    }else{
+
+    }
+--------
+    if -> Palabra reservada. 
+    () -> Espacio para la condicion.
+    {} -> Bloque de código a ejecutar.
+    else -> Segundo camino.
+    {} -> Bloque de codigo a ejecutar.
+
+3 - Anidado -> Evalua tres omas condiciones presentes con diferentes valores de verdad (True).
+    if -> Palabra reservada. 
+    () -> Espacio para la condicion.
+    {} -> Bloque de código a ejecutar.
+    else if -> Vuelta a preguntar de nuevo.
+
+4 - Multiple -> Evalua de un listado de condiciones el unico valor.
+    switch -> Palabra reservada.
+    switch(){
+        case n: 
+        break
+
+        default:
+        break
+    }
+    ----------
+    () -> Caso a evaluar
+    {} -> Bloque de codigo a ejecutar
+    case() -> Caso a ejecutar.
+    n -> Numero del caso.
+    break -> Cierre del caso.
+    default: -> Caso por defecto. 
+    break ->Cierre del condicional.
+    \ -> back slash: Se saca utilizando el (Alt Gr + ?) y sirve para hacer una numeracion entre el promt de un sistema switch. 
+-----------------------------------------------------------------------------------------------------------------------------
+let ladoA = Number(prompt("Ingrese la medida del lado a"));
+let ladoB = Number(prompt("Ingrese la medida del lado b"));
+let ladoC = Number(prompt("Ingrese la medida del lado c"));
+let altura = Number();
+let area = Number((ladoC * altura) / 2);
+let perimetro = Number(ladoA + ladoB + ladoC);
+
+if (ladoA > ladoB) {
+  altura = ladoA;
+} else {
+  altura = ladoB;
+}
+if (ladoA == ladoB && ladoC) {
+  console.log(
+    "El triangulo es un triangulo equilatero, su area es: " +
+      area +
+      " " +
+      "y su perimetro es: " +
+      perimetro
+  );
+} else if (ladoA != ladoB && ladoC) {
+  console.log(
+    "El triangulo es un triangulo escaleno su area es: " +
+      area +
+      " " +
+      " y su perimetro es: " +
+      perimetro
+  );
+} else if (ladoA == ladoB || ladoC) {
+  console.log(
+    "El triangulo es un triangulo Isocseles su area es: " +
+      area +
+      " " +
+      " y su perimetro es: " +
+      perimetro
+  );
+} else {
+  console.log("Datos errados");
+}
