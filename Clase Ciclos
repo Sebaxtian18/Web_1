@@ -1,0 +1,76 @@
+Ciclos de repeticón de estructuras:
+  for, while, do while.
+Ciclos de repeticion de arreglos (metodos de vectores):
+  map, filter, forEach, find, some...
+
+/*Ciclo for -> Estructura de repetición donde n debe de ser un valor finito.
+  for -> palabra reservada de ciclo "para"
+Variable expresion booleana variable -> Condición del ciclo 
+{} -> Codigo a repetir
+for(var index =0; index < variable; index++){
+  codigo a ejecutar
+}
+Contadores y acumuladores o operadores unarios. 
+  Contador index++ -> index = index + 1 
+  Contador index** -> index = index * 1 
+  Contador index-- -> index = index - 1 
+  Contador index // -> index = index / 1 
+  Acumulador index+=5 -> index = index + 5 (Este acuulador tambien puede ser *=, **, --, //)
+  Acumulador index *= n -> index = index * n (valor ingresado por teclado)
+  Acumulador index -= n -> index = index - n (valor ingresado por teclado)
+  Acumulador index /= n -> index = index / n (valor ingresado  por teclado)
+
+
+let acumulado = 0;
+let salario = 0; 
+let promedio = 0;
+for(var index = 0; index <= 3; index++){
+    salario = Number(prompt('Ingrese un salario: '))
+    acumulado += salario; 
+    console.log(index)
+}
+promedio = acumulado/index;
+console.log(promedio)
+
+//Tambien podemos decirle que ingrese la cantidad de repeticiones que se va a repetir el ciclo.
+let numeroDeRepeticiones = Number(prompt('Ingrese el numero de repeticiones: '))
+for(var index = 0; index <= numeroDeRepeticiones; index++){
+    salario = Number(prompt('Ingrese un salario: '))
+    acumulado += salario; 
+    console.log(index)
+}*/
+
+Ciclo while -> Estructura de repeticion infinita. Todo lo que se hace con un ciclo for, se puede hacer con un while. 
+Se ejecuta solamente si la expresión a evaluar es verdadera.
+El contador se define por fuera del ciclo y se incrementa dentro del ciclo
+  while -> palabra reservada. 
+  () -> Espacio para condicion.
+  {} -> Bloque de codigo.
+  while(){
+
+  }
+
+Cilo do while -> Estructura de repeticion infinita.
+  Todo lo que se hace con un ciclo for, se puede hacer con un do while.
+  Si la expresion a evaluar es falsa, garantiza por lo menos una ejecucion.
+  El contador se define por fuera del ciclo y se incrementa dentro del ciclo. 
+  Trabaja bajo el concepto conocido como centinela o bandera, es una mezcla de un ciclo con un condicional.
+  do{
+console.log('Esto es un do while
+  }while(false)
+
+  do{
+    let opcion = Number(prompt('Desea repetir: \n1 - Si \n2 - No'))
+    console.log(opcion)
+    console.log('Ingresando usuario...')
+    if(opcion == 2){
+        repetir = false; 
+    }
+}while(repetirtir)
+
+  
+Interpolacion de datos -> Datos de salida.
+  Template Strings: Todo dato lo manipulo como si fuera un string e introduzco una variable dentro de sí.
+  Se utiliza como un string de cooriido con las respectivas marcaciones ${fgdsgasgda} y dentro de las tildes invertidas `el nombre del usiario es ${nombre}`
+  
+  
